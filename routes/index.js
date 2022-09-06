@@ -6,6 +6,8 @@ var _ = require('lodash');
 var apiKey = process.env.TOKBOX_API_KEY;
 var secret = process.env.TOKBOX_SECRET;
 
+
+
 if (!apiKey || !secret) {
   console.error('=========================================================================================================');
   console.error('');
@@ -40,7 +42,7 @@ router.get('/', function (req, res) {
  * GET /session redirects to /room/session
  */
 router.get('/session', function (req, res) {
-  res.redirect('/room/session');
+  res.redirect('/room/session'); 
 });
 
 /**
